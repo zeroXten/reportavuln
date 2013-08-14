@@ -5,15 +5,26 @@
   <meta name="generator" content="HTML Tidy for Mac OS X (vers 31 October 2006 - Apple Inc. build 15.10), see www.w3.org">
   <meta charset="utf-8">
 
-  <title>mRova Solutions - One Page Template For Startups</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <title>Report a vuln</title>
+  <meta name="description" content="Useful information for reporting a vulnerability">
+  <meta name="author" content="zeroXten">
   <meta name="HandheldFriendly" content="true">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <!-- Import CSS -->
   <link rel="stylesheet" href="css/main.css" type="text/css">
-  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" type="text/css">
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+ 
+#share-buttons img {
+width: 35px;
+padding: 5px;
+border: 0;
+box-shadow: 0;
+display: inline;
+}
+ 
+</style>
   <script src="js/jquery.min.js" type="text/javascript"> </script>
   <script src="js/jquery.easing.min.js" type="text/javascript"> </script>
   <script src="js/jquery.scrollto.min.js" type="text/javascript"> </script>
@@ -36,6 +47,7 @@
             <li class="current"><a href="#home">Home</a></li>
             <li><a href="#what">What</a></li>
             <li><a href="#who">Who</a></li>
+            <li><a href="#how">How</a></li>
             <li><a href="#help">Help</a></li>
             <li><a href="#finally">Finally</a></li>
           </ul>
@@ -57,7 +69,8 @@
       </div>
     </div>
   </div><!-- End Full screen banner  -->
-  <!-- Services Section -->
+
+  <!-- What Section -->
   <!-- class section-alt is to give a different color please edit css/style.css to change the color -->
 
   <div class="section section-alt" id="what">
@@ -92,7 +105,6 @@
 
             <p>The danger here is that they might still ignore you which means you either have to give in or go public. If you go public, you might be directly putting the users at risk as anyone can now use that vulnerability. Having said that, it isn't your responsibility and you did try. Maybe.</p>
 
-            <p>Coordinated disclosure</p>
           </div>
         </div>
 
@@ -114,13 +126,12 @@
           </div>
         </div>
 
-
-
       </div>
     </div>
-  </div><!-- End Services Section -->
-  <!-- About Us section -->
+  </div><!-- End What Section -->
 
+
+  <!-- Who section -->
   <div class="section" id="who">
     <div class="container">
       <div class="content">
@@ -131,7 +142,7 @@
 
               <div class="hr hr-small hr-center"></div>
 
-              <p>People don't take bad news too well. Companies are no different.</p>
+              <p>Who ya gonna call? Hostmasters!</p>
             </div>
           </div>
         </div>
@@ -139,7 +150,8 @@
         <div class="row">
           <div class="span8 offset2 i-block">
             <h3>Disclosure Policy</h3>
-            <p>Do they have a disclosure policy? Or better yet, a bug bounty program?</p>
+            <h5>Read it.</h5>
+            <p>If the vendor or service has a disclosure policy, it should contain details on how to notify them of vulnerabilities. If they have a bug bounty program, even better. You might even get paid for reporting the issue.</p>
           </div>
         </div>
 
@@ -147,8 +159,9 @@
 
         <div class="row">
           <div class="span8 offset2 i-block">
-            <h3>Letting them know</h3>
-            <p>Email (security@...) technical support...</p>
+            <h3>Send an email</h3>
+            <h5>security@domain</h5>
+            <p>If their website doesn't explicitly mention how to notifying them of security issues, then you might want to try sending them an email. RFC 2142 suggests the use of security@domain but if that doesn't work you can also try hostmaster@domain and webmaster@domain.</p>
           </div>
         </div>
 
@@ -156,8 +169,9 @@
 
         <div class="row">
           <div class="span8 offset2 i-block">
-            <h3>Protect Yourself</h3>
-            <p>There have been plenty of cases where researches have received threatening letters from lawyers, or have even been interviewed by the policy, just for trying to do the right thing. Some companies really don't like being given bad news.</p>
+            <h3>Technical Support</h3>
+            <h5>Be careful.</h5>
+            <p>Finally, you could try to notifying them through their usual support channel. This might be a contact form on their website or a specific technical support email address. The danger here is that you don't know who will have access to your notification and it could get into the wrong hands. Ideally you would contact a security team directly, but this is generally not an option for most support channels.</p>
           </div>
         </div>
 
@@ -165,9 +179,69 @@
 
       </div>
     </div>
-  </div><!-- End About US -->
-  <!-- Features Section -->
+  </div><!-- Who section-->
 
+  <!-- How Section -->
+  <div class="section" id="how">
+    <div class="container">
+      <div class="content">
+        <div class="row">
+          <div class="span12">
+            <div class="title">
+              <h2>How</h2>
+
+              <div class="hr hr-small hr-center"></div>
+
+              <p>People don't take bad news too well. Companies are no different.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="span8 offset2 i-block">
+            <h3>Stay anonymous</h3>
+            <h5>Temporary email and TOR</h5>
+            <p>There have been a number of cases recently where a security researcher has had threatening legal letters and even a visit from the police, all for just trying to do the right thing. Telling a company that their software is broken can potentially upset them. Rather than take responsibility for the problem, they might try to blame you. They might claim you were attempting to "hack" them. They might get lawyers involved. Or the police. If you want to protect yourself from potential hassle, you could consider using <a href="https://www.torproject.org/">TOR</a> to access a temporary email service such as <a href="http://10minutemail.com/">10 Minute Mail</a>.</p>
+          </div>
+        </div>
+
+        <div class="hr hr-invisible"></div>
+
+        <div class="row">
+          <div class="span8 offset2 i-block">
+            <h3>Disclosure Policy</h3>
+            <h5>Read it.</h5>
+            <p>If they have a disclosure policy then it suggests they may have at least thought about the possibility of having to handle a vulnerability notification. Hopefully they will accept the notification with gratitude and will take it seriously. Or at least give you a realistic time frame. You may even feel comfortable sending the notification as yourself so they can get back to you if required.</p>
+          </div>
+        </div>
+
+        <div class="hr hr-invisible"></div>
+
+        <div class="row">
+          <div class="span8 offset2 i-block">
+            <h3>Be yourself</h3>
+            <h5>They might say thank you.</h5>
+            <p>You final choice is to notify them without hiding your identity. This would allow them to get back to you to request further details, to tell you it is fixed, or perhaps to say thank you. They might also give you credit.</p>
+          </div>
+        </div>
+
+        <div class="hr hr-invisible"></div>
+
+        <div class="row">
+          <div class="span8 offset2 i-block">
+            <h3>The Disclosure</h3>
+            <h5>The time has finally come...</h5>
+            <p>If you chose to disclose the vulnerability responsibly and gave them a time frame in which to fix the problem, it is entirely possible that for one reason or another they won't have fixed the issue on time. They might even ask you for more time. But at some point you might just decide to go public. As with the notification, you have the choice of doing it anonymously or using your identity. You could contact a major IT news website and give them the details, or you could post to the <a href="http://seclists.org/fulldisclosure/">Full Disclosure Mailing List</a>.</p>
+          </div>
+        </div>
+
+        <div class="hr hr-invisible"></div>
+
+      </div>
+    </div>
+  </div><!-- How Section -->
+
+  <!-- Help Section -->
   <div class="section section-alt" id="help">
     <div class="container">
       <div class="content">
@@ -178,70 +252,91 @@
 
               <div class="hr hr-small hr-center"></div>
 
-              <p>Heading, Buttons &amp; Font Awesome Icons.</p>
+              <p>If you're still unsure...</p>
             </div>
           </div>
         </div>
 
+        <div class="row">
+          <div class="span8 offset2 i-block">
+            <h3>Try a CERT</h3>
+            <p>Some Computer Emergency Response Teams (CERTs) will take vulnerability notifications and will contact the vendor or service on your behalf. For example, the US CERT provides a <a href="https://forms.cert.org/VulReport/">form</a> for you to submit vulnerability reports. The <a href="http://en.wikipedia.org/wiki/Computer_emergency_response_team">Wikipedia CERT page</a> has a list of CERTs on it.</p>
+          </div>
+        </div>
 
+        <div class="hr hr-invisible"></div>
 
+        <div class="row">
+          <div class="span8 offset2 i-block">
+            <h3>Further reading</h3>
+            <p>The following pages might help you: <a href="http://en.wikipedia.org/wiki/Responsible_disclosure">Wikipedia Responsible Disclosure page</a> - <a href="http://en.wikipedia.org/wiki/Full_disclosure">Wikipedia Full Disclosure page</a></p>
+          </div>
+        </div>
+
+        <div class="hr hr-invisible"></div>
 
       </div>
     </div>
-  </div><!-- End Features -->
-  <!-- Contact Section -->
+  </div><!-- End Help -->
 
-  <div class="section" id="contact">
+  <!-- Finally Section -->
+  <div class="section section-alt" id="finally">
     <div class="container">
       <div class="content">
         <div class="row">
           <div class="span12">
             <div class="title">
-              <h2>Contact Us</h2>
+              <h2>Finally</h2>
 
               <div class="hr hr-small hr-center"></div>
 
-              <p>We bring a personal and effective approach to
-              every project we work on.</p>
-            </div>
-          </div>
-
-          <div class="span8">
-            <iframe width="100%" height="317" frameborder="0"
-            scrolling="no" marginheight="0" marginwidth="0" src=
-            "https://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=mRova+Solutions,+Pune,+Maharashtra&amp;aq=0&amp;oq=mrova&amp;sll=18.815427,76.775144&amp;sspn=14.731137,19.577637&amp;ie=UTF8&amp;hq=mRova+Solutions,&amp;hnear=Pune,+Maharashtra&amp;t=m&amp;ll=18.526817,73.903141&amp;spn=0.073244,0.132008&amp;z=13&amp;iwloc=A&amp;output=embed">
-            </iframe>
-          </div>
-
-          <div class="span4">
-            <h4>Our Location</h4>
-
-            <p>F 4, Vidhi Apartment, Jambulkar Chowk, Near Camelia,
-            Wanowari</p>
-            <hr class="grey">
-
-            <h4>Email &amp; Phone</h4>
-
-            <p>info@mrova.com</p>
-
-            <p>020-60600340</p>
-            <hr class="grey">
-
-            <h4>Socialize With Us</h4>
-
-            <div class="social">
-              <a href="#fb"></a> <a href="#fb"></a> <a href=
-              "#fb"></a>
+              <p>The fine print.</p>
             </div>
           </div>
         </div>
+
+        <div class="row">
+          <div class="span8 offset2 i-block">
+            <h3>Disclaimer</h3>
+            <p>This web site and its creator is not responsible for, and expressly disclaims all liability for, damages of any kind arising out of use, reference to, or reliance on any information contained within the site. While the information contained within the site is periodically updated, no guarantee is given that the information provided in this web site is correct, complete, and up-to-date.</p>
+
+            <p> Although this site may include links providing direct access to other Internet resources, including web sites, I am not responsible for the accuracy or content of information contained in these sites.</p>
+
+            <p>You use the advice on this site at your own risk.</p>
+
+          </div>
+        </div>
+
+        <div class="hr hr-invisible"></div>
       </div>
     </div>
-  </div><!-- End Contact Section -->
+  </div><!-- End Finally -->
+
 
   <div id="footer">
-    &#169; 2013 mRova Solutions. Designed with lots of love at
-    <a id="attribution" href="http://www.mrova.com">mRova</a>.
+    <!-- I got these buttons from simplesharebuttons.com -->
+    <div id="share-buttons">
+    <!-- Facebook -->
+    <a href="http://www.facebook.com/sharer.php?u=http://reportavuln.com" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" /></a>
+    <!-- Twitter -->
+    <a href="http://twitter.com/share?url=http://reportavuln.com&text=Report A vuln" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a>
+    <!-- Google+ -->
+    <a href="https://plus.google.com/share?url=http://reportavuln.com" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/google.png" alt="Google" /></a>
+    <!-- Digg -->
+    <a href="http://www.digg.com/submit?url=http://reportavuln.com" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/diggit.png" alt="Digg" /></a>
+    <!-- Reddit -->
+    <a href="http://reddit.com/submit?url=http://reportavuln.com&title=Report a vuln" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/reddit.png" alt="Reddit" /></a>
+    <!-- LinkedIn -->
+    <a href="http://www.linkedin.com/shareArticle?mini=true&url=http://reportavuln.com" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" /></a>
+    <!-- Pinterest -->
+    <a href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());"><img src="http://www.simplesharebuttons.com/images/somacro/pinterest.png" alt="Pinterest" /></a>
+    <!-- StumbleUpon-->
+    <a href="http://www.stumbleupon.com/submit?url=http://reportavuln&title=Report a vuln" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/stumbleupon.png" alt="StumbleUpon" /></a>
+    <!-- Email -->
+    <a href="mailto:?Subject=Report a vuln&Body=I%20saw%20this%20and%20thought%20of%20you!%20 http://reportavuln.com"><img src="http://www.simplesharebuttons.com/images/somacro/email.png" alt="Email" /></a>
+    </div>
+
+    &#169; 2013 <a id="0x10" href="http://blog.0x10.co.uk/">0x10</a> | Designed with lots of love at <a id="attribution" href="http://www.mrova.com">mRova</a> | Hosted by <a id="hosting" href="http://www.github.com">GitHub</a>
   </div>
 </body>
 </html>
